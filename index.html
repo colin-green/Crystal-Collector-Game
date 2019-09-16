@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower|Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Crystal Collector Game</title>
+</head>
+<body>
+
+<div id="instructions">
+    <h1>Welcome to the Crystal Collector Game!</h1>
+    <p>Try to guess the Magic Number!</p>
+    <p>There are four crystals below, each with a different hidden value.</p>
+    <p>Click on one to add its value to your score! You win if you can get your score to match the Magic Number; you lose if your score goes above the Magic Number.</p>
+    <p>The value of each crystal is hidden from you until you click on it.</p>
+    <p>For an added challenge, try to win with as little clicks possible!</p>
+    <p>There's a new Magic Number and crystal values with each new game. Have fun!</p>
+</div>
+
+<div id="magicNumber"></div>
+
+<img id="green" src="assets/images/BotW_Green_Rupee_Icon.png" alt="Green">
+<img id="blue" src="assets/images/BotW_Blue_Rupee_Icon.png" alt="Blue">
+<img id="red" src="assets/images/BotW_Red_Rupee_Icon.png" alt="Red">
+<img id="purple" src="assets/images/BotW_Purple_Rupee_Icon.png" alt="Purple">
+
+<div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col">
+        <div id="score">
+            Score: 0
+        </div>
+        <div id="clicks">
+            Clicks: 0
+        </div>
+    </div>
+    <div class="col">
+            <div id="wins">
+                Wins: 0
+            </div>
+            <div id="losses">
+                Losses: 0
+            </div>
+    </div>
+    <div class="col"></div>
+    <div class="col"></div>
+</div>
+
+<!-- jQuery link -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<!-- My Javascript link -->
+<script src="assets/javascript/game.js"></script>
+    
+</body>
+</html>
